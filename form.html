@@ -11,5 +11,42 @@
     <header>
         <h1> Edit an Existing News Item</h1>
     </header>
+
+    <main>
+        <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="POST"></form>
+        <input type="hidden" name="itemID" value="10002000-3000-123456abcdef">
+
+        <section>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="New course launch announced">
+        </section>
+
+        <selection>
+            <label for="title">Title:</label>
+            <input type="text" id="title" value="New course launch announced">
+        </selection>
+
+        <section>
+            <label for="title">Date:</label>
+            <input type="date" id="date" name="date" value="01-09-2025">
+        </section>
+
+         <section>
+            <label for="title">Author:</label>
+            <input type="text" id="author" name="author" value="Admin Team">
+        </section>
+
+        <section>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="6">We are excited to announce the launch of a new short course for the academic year 2025/2026.</textarea>
+        </section>
+
+        <button type="submit">Update News Item</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EduMax</p>
+    </footer>
 </body>
 </html>
