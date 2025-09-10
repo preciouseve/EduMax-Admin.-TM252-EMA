@@ -9,44 +9,91 @@
 </head>
 <body>
     <header>
-        <h1> Edit an Existing News Item</h1>
+        <img src=""logo.png" alt=""EduMax Logo" width="100">
+        <h1>EduMax Admin</h1>
+        <nav>
+            <input type=""search" placeholder="Search...">
+            <button>Profile</button>
+        </nav>
     </header>
 
     <main>
-        <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="POST"></form>
-        <input type="hidden" name="itemID" value="10002000-3000-123456abcdef">
+        <aside>
+            <h2>Navigation</h2>
+            <nav aria-label="Content and Events">
+                <ul>
+                    <li><button type="button">Content Management</button></li>
+                    <li><button type="button"> Learning Events</button></li>
+                </ul>
+            </nav>
+            <nav aria-label="News Management"
+                <ul>
+                    <li><button type ="button">Create News Item</button></li>
+                    <li><button type ="button">Edit News Item</button></li>
+                </ul>
+            </nav>
+        </aside>
 
         <section>
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" value="New course launch announced">
-        </section>
+            <h2>Edit a News Item</h2>
+            <p>Edit an Existing Event</p>
 
-        <selection>
-            <label for="title">Title:</label>
-            <input type="text" id="title" value="New course launch announced">
-        </selection>
+            <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="POST">
 
-        <section>
-            <label for="title">Date:</label>
-            <input type="date" id="date" name="date" value="01-09-2025">
-        </section>
+                <!-- Hidden ID-->
+                 <input type="hidden" name="itemID" value="100200-300-123456abcdef">
 
-         <section>
-            <label for="title">Author:</label>
-            <input type="text" id="author" name="author" value="Admin Team">
-        </section>
+                <!-- Basic Details -->
+                 <fieldset>
+                    <legend>Basic Details</legend>
 
-        <section>
-            <label for="content">Content:</label>
-            <textarea id="content" name="content" rows="6">We are excited to announce the launch of a new short course for the academic year 2025/2026.</textarea>
-        </section>
+                    <label for="newsTitle"> News Title*</label><br>
+                    <input type="text" id="newsTitle" name="newsTitle" value="New Semester Kick-Off" required><br><br>
 
-        <button type="submit">Update News Item</button>
-        </form>
+                    <label for="description">Description*</label><br>
+                    <textarea id="description" name="description" rows="3" required>All the events you can participate in this freshers week!</textarea>
+                 </fieldset>
+                 <br>
+                 <!-- Details -->
+                  <fieldset>
+                    <legend>Details</legend>
+
+                    <label for="date">Date*</label>
+                    <input type="date-local" id="date" name="date" value="New Semester Kick-Off" required><br><br>
+
+                    <label for="author">Author*</label>
+                    <input type="text" id="author" name="author" value="Admin Team" required><br><br>
+
+                    <label for="tags">Tags/Categories*</label>
+                    <select id="tags" name="tags" required><br><br>
+                        <option selected>Announcements</option>
+                        <option>Events</option>
+                        <option>General</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <!-- Content -->
+                 <fieldset>
+                    <legend>Content</legend>
+                    <textarea id="content" name="content" rows="6" required>Here's a list of the events planned this week 01.09-06.09:
+                    - Course induction (01.09, 9:30, Main Hall)
+                    - International Dinner (02.09, 20:30 Cafeteria) 
+                    - Extra-Curricular Kick-Off (05.09, 16:00, Main Hall)
+                    </textarea>
+                 </fieldset>
+                 <br>
+
+                 <!-- Buttons -->
+                  <button type="submit">Publish</button>
+                  <button type="button">Save as Draft</button>
+                  <button type="reset">Delete</button>
+            </form>
+            </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 EduMax</p>
-    </footer>
 </body>
+
+<footer>
+    <p>&copy; 2025 EduMax</p>
+</footer>
 </html>
