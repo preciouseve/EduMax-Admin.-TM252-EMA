@@ -29,7 +29,8 @@
 
                     <!--Search form-->
                     <form class="d-flex" role="search" aria-label="Site search">
-                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search..."
+                            aria-label="Search">
                         <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
                     </form>
                 </div>
@@ -81,78 +82,86 @@
 
                                 <!-- Basic Details -->
                                 <div class="row">
-                                <div class="col-12 col-lg-6"></div>
-                                <fieldset class="mb-3">
-                                    <legend class="small">Basic Details</legend>
-                                    <div class="mb-3">
-                                        <label for="newsTitle" class="form-label"> News Title*</label><br>
-                                        <input type="text" id="newsTitle" name="newsTitle" class="form-control"
-                                            value="New Semester Kick-Off" required>
+                                    <div class="col-12 col-lg-6">
+                                        <fieldset class="mb-3">
+                                            <legend class="small">Basic Details</legend>
+                                            <div class="mb-3">
+                                                <label for="newsTitle" class="form-label"> News Title*</label><br>
+                                                <input type="text" id="newsTitle" name="newsTitle" class="form-control"
+                                                    value="New Semester Kick-Off" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="description" class="form-label">Description*</label><br>
+                                                <textarea id="description" name="description" class="form-control"
+                                                    rows="3"
+                                                    required>All the events you can participate in this freshers week!</textarea>
+                                            </div>
+                                        </fieldset>
+
+                                        <!-- Details -->
+                                        <fieldset class="mb-3">
+                                            <legend class="small">Details</legend>
+                                            <div class="mb-3">
+                                                <label for="date" class="form-label">Date*</label>
+                                                <input type="datetime-local" id="date" name="date" class="form-control"
+                                                    value="New Semester Kick-Off" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="author" class="form-label">Author*</label>
+                                                <input type="text" id="author" name="author" value="Admin Team"
+                                                    required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="tags" class="form-label">Tags / Categories*</label>
+                                                <select id="tags" name="tags" class="form-select" required>
+                                                    <option selected>Announcements</option>
+                                                    <option>Events</option>
+                                                    <option>General</option>
+                                                </select>
+                                            </div>
+                                        </fieldset>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="description" class="form-label">Description*</label><br>
-                                        <textarea id="description" name="description" class="form-control" rows="3"
-                                            required>All the events you can participate in this freshers week!</textarea>
-                                    </div>
-                                </fieldset>
-
-                                <!-- Details -->
-                                <fieldset class="mb-3">
-                                    <legend class="small">Details</legend>
-                                    <div class="mb-3">
-                                        <label for="date" class="form-label">Date*</label>
-                                        <input type="datetime-local" id="date" name="date" class="form-control"
-                                            value="New Semester Kick-Off" required><br><br>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="author" clalss="form-label">Author*</label>
-                                        <input type="text" id="author" name="author" value="Admin Team" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="tags" class="form-label">Tags / Categories*</label>
-                                        <select id="tags" name="tags" class="form-select" required>
-                                            <option selected>Announcements</option>
-                                            <option>Events</option>
-                                            <option>General</option>
-                                        </select>
-                                    </div>
-                                </fieldset>
-                        </div>
-
-                        <!-- Right column: Content -->
-                        <div class="col-12 col-lg-6">
-                            <fieldset class="mb-3">
-                                <legend class="small">Content</legend>
-                                <textarea id="content" name="content" class="form-control" rows="12" required>
+                                    <!-- Right column: Content -->
+                                    <div class="col-12 col-lg-6">
+                                        <fieldset class="mb-3">
+                                            <legend class="small">Content</legend>
+                                            <textarea id="content" name="content" class="form-control" rows="12"
+                                                required>
 Here's a list of the events planned this week 01.09-06.09:
 - Course induction (01.09, 9:30, Main Hall)
-- International Dinner (02.09, 20:30 Cafeteria) 
-- Extra-Curricular Kick-Off (05.09, 16:00, Main Hall)
-                    </textarea>
-                            </fieldset>
-                        </div>
-                    </div>
+- International Dinner (02.09, 20:30 Cafeteria)
+- Extra-Curricular Kick-Off (05.09, 16:00, Main Hall)</textarea>
+                                        </fieldset>
+                                    </div>
 
-                    <!-- Buttons -->
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <button type="reset" class="btn btn-outline-danger btn-sm">Delete</button>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-sm">Publish</button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">Save as Draft</button>
+                                </div>
+
+                                <!-- Buttons -->
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <button type="reset" class="btn btn-outline-danger btn-sm">Delete</button>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-sm">Publish</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">Save as
+                                            Draft</button>
+                                    </div>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
-                    </form>
             </section>
+
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="text-center py-2 mt-4 boarder-top bg-white">
+    <footer class="text-center py-2 mt-4 border-top bg-white">
         <p class="mb-0">&copy; 2025 EduMax</p>
     </footer>
 
