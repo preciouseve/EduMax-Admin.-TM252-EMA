@@ -1,0 +1,39 @@
+/* header */
+header {
+    background-color: #3c9fc3;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Logo */
+img {
+    width: 100px;
+    transition: all 03.s ease;
+}
+
+img:hover {
+    width: #7bd5d5
+}
+
+/* Headings colours */
+h2, h3, h4 {
+    color: #7bd5d5;
+}
+
+/*News form styling*/
+news-form {
+    border: 1px solid #3c9fc3;
+    background-color: #f0f8fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Button hover effect */
+news-form button {
+   transition: backgrounf-colr 0.3s ease;
+}
+
+news-form button:hover {
+    background-color: #3c9fc3;
+    color: white;
+}
